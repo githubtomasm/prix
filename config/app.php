@@ -168,15 +168,16 @@ return [
          */
 
         //
+        Zizaco\Entrust\EntrustServiceProvider::class,
 
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Prix\Providers\AppServiceProvider::class,
+        Prix\Providers\AuthServiceProvider::class,
+        // Prix\Providers\BroadcastServiceProvider::class,
+        Prix\Providers\EventServiceProvider::class,
+        Prix\Providers\RouteServiceProvider::class,
 
     ],
 
@@ -225,6 +226,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
 
     ],
 
