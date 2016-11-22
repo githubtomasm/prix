@@ -15,6 +15,9 @@ class CreateTopicblogTable extends Migration
     {
         Schema::create('topicblog', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('titulo');
+            $table->longtext('contenido'); 
+            $table->integer('users_id'); //esta es otra practica casi a huevo, tenes que opner el nombre de la tabla _  y el nombre de la columna
             $table->timestamps();
         });
     }
